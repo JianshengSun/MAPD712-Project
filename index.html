@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Patient Clinical Data Management</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    
+    <div id="login_div" class="main-div">
+        <div style="text-align:center"><img src="./image/logo.png" style="width: 25%;"></div>
+        <h1 style: text-align:center>Patient Clinical<br> Data Management</h1><br>
+        <h3>Email</h3>
+        <input type="email" id="username_field"/>
+        <h3>Password</h3>
+        <input type="password" id="password_field"/>
+        <br><br>
+        <button onclick="login()">Lgoin</button>
+    </div>
+
+    <div id="user_div" class="main-div" >
+      <h3 id="user_para">Welcome User.</h3>
+      <button onclick="logout()">Logout</button>
+    </div>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBx8-yLF60s8Cumno3tUdmPpYwUdNxDAOk",
+    authDomain: "mapd-712-project.firebaseapp.com",
+    databaseURL: "https://mapd-712-project.firebaseio.com",
+    projectId: "mapd-712-project",
+    storageBucket: "mapd-712-project.appspot.com",
+    messagingSenderId: "989795143833",
+    appId: "1:989795143833:web:bb1a121287306aa9aca808"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

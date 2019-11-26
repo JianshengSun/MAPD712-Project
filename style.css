@@ -1,0 +1,95 @@
+body {
+    background: #20A3CD;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + (16 - 10) * ((100vw - 300px) / (1800 - 300)));
+    font-weight: 400;
+}
+
+h1 {    
+    color: #fff;
+    text-align:center;
+    font-weight: 300;
+}
+
+h2 {
+    color: #fff;
+    text-align:center;
+    font-weight: 300;
+}
+
+h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+input, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.main-div {
+    width:80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.main-div input {
+    display:block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.main-div input:focus {
+    border: 1px solid #777;
+}
+
+.main-div button {
+    background: #20A3CD;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.main-div button:hover {
+    background: #fff;
+    outline-color: #fff;
+    outline-width: 2px;
+    color: #00485F;
+    border: 1px solid #00485F;
+    cursor: pointer;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 800px) {
+    /* For tablets: */
+
+    .main-div {width: 40%;}
+
+  }
+  @media only screen and (min-width: 1200px) {
+    /* For desktop: */
+
+    .main-div {width: 20%;}
+  }
